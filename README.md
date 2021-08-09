@@ -1,4 +1,5 @@
 
+
 # scravicon
 
 > Extract URL's favicons
@@ -6,9 +7,7 @@
 Example of usage
 
     const scravicon = require('scravicon');
-    scravicon("https://www.alsacreations.com/astuce/lire/59-icon-link-rel-favicon-ico-navigateur.html", {
-        selector: ""
-    }).then((favicons) => {
+    scravicon("https://www.alsacreations.com/astuce/lire/59-icon-link-rel-favicon-ico-navigateur.html", options).then((favicons) => {
         console.log(favicons);
         /* [
 		{
@@ -37,4 +36,9 @@ Example of usage
 		}
 	] */
     });
+
+
+Options
+
+    selector : override default js selector
 
