@@ -1,0 +1,23 @@
+{
+  "name": "scravicon",
+  "version": "0.0.1",
+  "description": "Extract URL's favicons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HrodeDotFr/scravicon.git"
+  },
+  "author": "Hrode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HrodeDotFr/scravicon/issues"
+  },
+  "homepage": "https://github.com/HrodeDotFr/scravicon#readme",
+  "keywords": [
+    "scrap",
+    "favicons"
+  ]
+}
