@@ -19,5 +19,8 @@
   "keywords": [
     "scrap",
     "favicons"
-  ]
+  ],
+  "dependencies": {
+    "jsdom": "^16.7.0"
+  }
 }
