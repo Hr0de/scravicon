@@ -1,7 +1,10 @@
 const {JSDOM} = require("jsdom");
 
 module.exports = function (url, params) {
-    if (!(typeof params.selector === "string" && params.selector.length)) {
+    if (typeof params !== "object") {
+        params = {};
+    }
+    if (!(typeof params === "object" && typeof params.selector === "string" && params.selector.length)) {
         params.selector = 'head > link[rel="icon"], head > link[rel="shortcut icon"]';
     }
     return new Promise((resolve, reject) => {
@@ -28,6 +31,8 @@ module.exports = function (url, params) {
                 favicons.push(favicon);
             });
             resolve(favicons);
+        }).then(e => {
+            reject(e);
         });
     });
 };
